@@ -10,10 +10,6 @@ keys = {
 
 TOKEN = "удален"
 
-#print(keys.keys())
-#print(keys.values())
-
-
 keys_more = {
         'BTC': 'Биткоин',
         'USD': 'Доллар_США',
@@ -40,9 +36,6 @@ keys_more = {
 }
 
 
-#print(key_get(keys_more,'Евро'))
-
-#(base_key = i) for i, j in keys_more.items() if j == base
 # Коды валют по ISO 4217
 
 # UAH	980	Украинская гривна
