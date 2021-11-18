@@ -22,7 +22,8 @@ def start_help(message):
            "<имя или код валюты, цену которой хотите узнать>  <имя или код валюты, в которой надо узнать цену первой валюты> " \
            "<количество первой валюты>\n " \
            "Чтобы увидеть список доступных валют, введите команду /values  \n " \
-           "Чтобы увидеть старый список доступных валют, введите команду /values_old"
+           "Чтобы увидеть старый список доступных валют, введите команду /values_old \n " \
+           "Вводить названия валют можно как кодами, так и полными названиями, а можно и смешанные варианты"
 
     bot.reply_to(message, f"Приветствую, {message.chat.username} \n " + text)
 #    pass
@@ -72,17 +73,11 @@ def repeat(message: telebot.types.Message):
 
 
 
-
-
 # Обрабатывается все документы и аудиозаписи
 @bot.message_handler(content_types=['document', 'audio'])
 def handle_docs_audio(message: telebot.types.Message):
     bot.send_message(message.chat.id, "что-то получил")
 
-@bot.message_handler(commands=['start', 'help'])
-def send_welcome(message: telebot.types.Message):
-    bot.reply_to(message, f"Welcome, {message.chat.username}")
-#     bot.send_message(message.chat.id, f"Welcome, {message.chat.username}") # имя не выводит, пишет None
 
 @bot.message_handler(content_types=['photo', ])
 def say_lmao(message: telebot.types.Message):
