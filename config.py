@@ -8,7 +8,7 @@ keys = {
 }
 
 
-TOKEN = "2100944398:AAE4ho632ghxaiHnVFnCnwXoF5zbWnfkCIE"
+TOKEN = "удален"
 
 #print(keys.keys())
 #print(keys.values())
