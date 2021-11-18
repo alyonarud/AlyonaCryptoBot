@@ -58,7 +58,6 @@ class Convertor_more:
     def get_price(base, sym, amount):
         try:
             if base in keys_more.values():
-                #base_key = keys_more[base.lower()]
                 # по значению получить индекс
                 base_key = key_get(keys_more, base)
             else:
